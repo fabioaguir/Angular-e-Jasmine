@@ -1,9 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { UserService } from './user.service';
-import { TokenService } from './../token/token.service';
 
 describe('O serviço UserService', () => {
-  // let tokenService: TokenService;
   let service: UserService;
 
   beforeEach(() => {
@@ -12,7 +10,7 @@ describe('O serviço UserService', () => {
     });
 
     service = TestBed.get(UserService);
-  })
+  });
 
   it('deve ser instanciado', () => {
     expect(service).toBeTruthy();
